@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.3;
+  background: linear-gradient(#7cd1b8, #faedc6) no-repeat center center/cover;
+  font-family: "Oooh Baby", cursive; }
+
+.container {
+  width: 400px;
+  margin: 10px;
+  padding: 5px; }
+  .container #title h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #f4f4f4;
+    margin-bottom: 1.5rem; }
+  .container #text-box {
+    text-align: center;
+    margin-bottom: 0.5rem; }
+    .container #text-box #input-box {
+      font-size: 1.5rem;
+      width: 85%;
+      height: 50px;
+      padding: 5px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      border-bottom: 1px solid #fabb51;
+      transition: border 0.3s ease-in; }
+    .container #text-box #input-box::placeholder {
+      opacity: 1;
+      font-family: "Oooh Baby", cursive;
+      font-weight: bold;
+      transition: opacity 0.3s ease-in; }
+    .container #text-box #input-box:focus {
+      border-bottom-width: 2px; }
+    .container #text-box #input-box:focus::placeholder {
+      opacity: 0.5; }
+    .container #text-box #adding-item {
+      margin-left: 10px;
+      background: transparent;
+      color: #3e8e7e;
+      font-size: 2rem;
+      border: none;
+      transition: transform 0.5s ease-in-out; }
+    .container #text-box #adding-item:hover {
+      transform: rotate(135deg);
+      cursor: pointer; }
+  .container #shipping-list {
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .container #shipping-list h2 {
+      display: block;
+      font-size: 1.75rem;
+      text-align: center;
+      color: #333;
+      padding: 10px 10px 10px 0; }
+    .container #shipping-list #clean-list {
+      position: relative;
+      left: 250px;
+      top: 0;
+      margin-bottom: 0.75rem;
+      display: block;
+      font-family: "Oooh Baby", cursive;
+      font-weight: bold;
+      font-size: 0.75rem;
+      border: none;
+      background: transparent;
+      transition: all 0.1s ease-in-out; }
+    .container #shipping-list #clean-list:hover {
+      transform: scale(1.2);
+      color: #3e8e7e;
+      cursor: pointer; }
+  .container #shipping-item {
+    font-size: 1.25rem;
+    margin-left: 2rem; }
+    .container #shipping-item ul {
+      list-style: none;
+      position: relative; }
+      .container #shipping-item ul li {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #333;
+        border-bottom: 1px dashed #7cd1b8; }
+        .container #shipping-item ul li .custom-checkbox {
+          margin-right: 5px;
+          position: relative;
+          top: 2px;
+          width: 1rem;
+          height: 1rem;
+          border: 1px #fabb51 solid;
+          background-color: white;
+          border-radius: 50%;
+          -webkit-appearance: none;
+          cursor: pointer;
+          transition: all 0.1s ease-in; }
+        .container #shipping-item ul li .custom-checkbox:hover {
+          transform: scale(1.1);
+          opacity: 0.6; }
+        .container #shipping-item ul li .custom-checkbox:checked::after {
+          content: "\2714";
+          font-size: 1.5rem;
+          position: absolute;
+          top: -12px;
+          left: 0px;
+          color: #fabb51;
+          transform: rotate(10deg); }
