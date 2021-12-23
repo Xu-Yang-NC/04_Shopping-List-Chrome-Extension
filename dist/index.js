@@ -111,6 +111,10 @@ function bindingFunction(items) {
 
 // Making sure something is typed
 function inputValid() {
-  return inputBox.value !== "";
+  if(inputBox.value === "" || inputBox.value.index('<') !== -1){
+    return false;
+  } else {
+    return true;
+  }
 }
 
