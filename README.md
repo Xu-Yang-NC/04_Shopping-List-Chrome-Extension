@@ -1,6 +1,6 @@
 # Shopping-List-Chrome-Extension
 
-
+![plot](./Shopping-List-Chrome-Extension/dist/img/img.png)
 
 This is my first application using JavaScript. This application is a shopping list chrome extension which items can be simply added to or removed from the list.
 All the entering data will be saved to the local storage. Therefore, even the extension is closed, all the items in the list will not be lost. 
