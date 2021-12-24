@@ -111,7 +111,7 @@ function bindingFunction(items) {
 
 // Making sure something is typed
 function inputValid() {
-  if(inputBox.value === "" || inputBox.value.index('<') !== -1){
+  if(inputBox.value === "" || inputBox.value.indexOf('<') !== -1){
     return false;
   } else {
     return true;
