@@ -7,5 +7,5 @@ All the entering data will be saved to the local storage. Therefore, even the ex
 The "remove purchased" button only removes the items that are checked. The UI used HTML and CSS. SASS is involved to manage all the CSS.
 
 
-The forEach loop didn't work quit well at beginning when checking which item is checked, only one checked item was removed from the list. The solution is to reverse the array
+The forEach loop didn't work quiet well at beginning when checking which item is checked, only one checked item was removed from the list. The solution is to reverse the array
 and then loop through it.
